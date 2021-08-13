@@ -1,12 +1,34 @@
 package chapter14.practice14_01;
 
 public class Account {
-	String accountNumber; // 口座番号
-	int balance; // 残額
-	/* (1)文字列表現のメソッド */
+	private String accountNumber; // 口座番号
+	private int balance; // 残額
 
+	public String getAccountNumber() {
+		return accountNumber;
+	}
+
+	public void setAccountNumber(String accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+	public Account(String string, String string2) {
+		// TODO 自動生成されたコンストラクター・スタブ
+		setAccountNumber(string);
+		setBalance(Integer.parseInt(string2));
+	}
+
+	/* (1)文字列表現のメソッド */
 	public String toString() {
-		return "¥¥" + this.balance + "(口座番号:" + this.accountNumber + ")";
+		return "¥" + this.balance + "(口座番号:" + this.accountNumber + ")";
 	}
 	
 	/* (2)等価判定のメソッド */
