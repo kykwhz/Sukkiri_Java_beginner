@@ -5,8 +5,10 @@ public class Code14_01 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		Empty e = new Empty();
+		System.out.println(e); // (1)
+
 		String s = e.toString();
-		System.out.println(s);
+		System.out.println(s); // 表示結果は、(1)と同じ
 	}
 
 }

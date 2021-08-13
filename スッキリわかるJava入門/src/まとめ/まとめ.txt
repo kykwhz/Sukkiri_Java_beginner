@@ -1,0 +1,166 @@
+第0章 Javaをはじめよう
+
+0.1 ようこそJavaの世界へ
+
+0.1.1 Javaを使ってできること
+
+0.1.2 一緒にJavaを学ぶ仲間たち
+
+0.2 はじめてのプログラミング
+
+0.2.2 サンプルプログラムを動かしてみよう
+
+※mainメソッド覚える
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+0.2.3 画面に好きな文字を表示させよう
+
+0.2.4 たくさんの文章を表示させよう
+
+0.2.5 計算させてみよう
+
+0.2.6 変数を使ってみよう
+
+0.2.7 プログラミング体験を終えて
+
+第I部 ようこそJavaの世界へ
+
+第1章 プログラムの書き方
+
+1.1 Javaによる開発の基礎知識
+
+1.1.1 開発の流れ
+
+手順(1)ソースコードの作成
+手順(2)コンパイル
+手順(3)実行
+
+人が読める状態のプログラムを「ソースコード」(source code)、または単に「ソース」という。
+ソースコードを書き込んだファイルのことを「ソースファイル」(source file)という。
+ファイル名の末尾(拡張子)は、「.java」とする決まりになっている。
+
+コンパイル(compile)
+クラスファイル(class file)
+バイトコード(byte code)
+コンパイラ(compiler)
+インタプリタ(interpreter)
+JVM(Java Virtual Machine)
+
+1.1.2 開発環境の整備
+
+1.2 Javaプログラムの基本構造
+
+1.2.1 プログラムの骨格
+
+クラス名(class name)
+
+1.2.2 プログラムの書き始め方
+
+public static void main (String[] args)
+を一字一句間違えずスラスラ書けるようになりましょう。
+
+1.2.3 インデント
+
+インデント(indent)
+
+1.2.4 コメント
+
+コメント(comment)
+
+コメント文(1) 複数行コメント
+/* コメント本文(複数行でも可) */
+
+コメント文(2) 単一行コメント
+// コメント本文(行末まで)
+
+1.2.5 mainメソッドの中身
+
+mainメソッド
+
+文(statement)
+
+1.3 変数宣言の文
+
+1.3.1 変数宣言の文とは？
+
+変数に値を入れることを「代入」という。
+変数から値を取り出すことを「取得」という。
+
+1.3.2 変数の名前
+
+識別子(identifier)
+
+1.3.3 データ型
+
+表1-1 代表的な9種類のデータ型
+型名			格納するデータ
+byte		とても小さな整数
+short		小さな整数
+int			普通の整数
+long		大きな整数
+float		少しあいまいでもよい小数
+double		普通の小数
+boolean		trueかfalse
+char		1つの文字
+String		文字の並び
+
+※Stringだけ頭文字が大文字。他のデータ型は全て小文字。
+
+1.3.4 変数の初期化
+
+型 変数名 = 代入するデータ;
+
+1.3.5 定数の利用
+
+定数(constant variable)
+
+定数の宣言
+final 型 定数名 = 初期値;
+※一般的に、定数名にはすべて大文字を用いる。(例:PI、MAX_HP)
+
+1.4 第1章のまとめ
+
+1.5 練習問題
+
+1.6 練習問題の解答
+
+第2章 式と演算子
+オペランド(operand)
+演算子(operator)
+リテラル(literal)
+エスケープシーケンス(escape sequence)
+評価(evaluation)
+優先順位(15段階ある)
+結合規則
+算術演算子
+文字列結合演算子
+代入演算子
+インクリメント／デクリメント演算子
+単項演算子
+キャスト演算子(cast operator)
+
+改行せずに画面に文字を表示する
+System.out.print( (1) );
+※(1)は画面に表示したい値や式
+
+2つの値を比較して大きいほうの数値を代入する
+int m = Math.max( (1), (2) );
+※(1)および(2)は比較したい値や式
+
+文字列を数値に変換する
+int n = Integer.parseInt( (1) );
+
+乱数を発生させる
+int r = new java.util.Random().nextInt( (1) );
+
+キーボードから1行の文字列の入力を受け付ける
+String s = new java.util.Scanner(System.in).nextLine();
+
+キーボードから1つの整数の入力を受け付ける
+int input = new java.util.Scanner(System.in).nextInt();
+
+教科書には書いていないが、授業で紹介された例
+double input = new java.util.Scanner(System.in).nextDouble();
