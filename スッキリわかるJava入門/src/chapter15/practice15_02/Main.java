@@ -17,16 +17,8 @@ class test {
 	private String folder;
 	private String file;
 
-	public String getFolder() {
-		return folder;
-	}
-
 	public void setFolder(String folder) {
 		this.folder = folder;
-	}
-
-	public String getFile() {
-		return file;
 	}
 
 	public void setFile(String file) {
@@ -34,10 +26,9 @@ class test {
 	}
 
 	public String folder_plus_file() {
-		if(!this.folder.matches(".*¥")){
+		if (!this.folder.matches(".*¥")) {
 			this.folder += "¥";
 		}
 		return this.folder + this.file;
 	}
-
 }
